@@ -15,30 +15,20 @@ Notes:
 import _Gaia._gaia
 
 help(_Gaia)
-
 help(_Gaia._gaia)
-
 help(_Gaia._gaia.who_am_i)
-
 
 or
 
 pydoc _gaia
-
 pydoc _gaia.who_am_i
 
-
 pydoc _Gaia
-
 pydoc _Gaia._gaia
-
 pydoc _Gaia._gaia.who_am_i
-
-
 
 :q 
 to exit
-
 
 to write to a html:
 
