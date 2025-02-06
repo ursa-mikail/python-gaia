@@ -1,0 +1,33 @@
+####################################
+import <import_packages>
+
+# point to path
+lib_path = os.path.abspath(<gaia_class_path>) # e.g. ('../../Libraries/data')
+sys.path.append(lib_path)
+
+# import package from path
+from <gaia_class> import <gaia_class>	# file name
+
+# add other methods
+def <gaia_class>_test_<index_starting_from_00>():
+    id_<gaia_class> = "Test Usage Agent: <gaia_class>"
+    print ("=====[" + id_<gaia_class> + " Start]===== \n")
+    <gaia_class>_object = regex_lib(id_<gaia_class>)
+
+    <gaia_class>_object.who_am_i()
+
+    # import _Gaia._gaia
+    # help(regex_lib) # introspect
+
+    print("=====[" + id_<gaia_class> + " End]===== \n");
+
+    return None
+####################################
+## main
+####################################
+if __name__ == "__main__":
+    <gaia_class>_test_<index_starting_from_00>()
+
+"""
+# version: <time_stamp>
+"""		

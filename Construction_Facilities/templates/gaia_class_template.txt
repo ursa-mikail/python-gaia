@@ -1,0 +1,73 @@
+# import <import_packages>
+
+class <gaia_class>:
+	""" Template model of Gaia """
+	id = "<gaia_class>"
+	
+	def __init__(self, id):
+		self.id = id;
+		print ("_gaia object [%s] is born\n" % self.id)
+		
+	# add other methods
+	
+	def who_am_i(self): #
+		""" Introspection """
+		self.line_storage = [];
+
+		print ("My name is Gaia [" + self.id + "].")
+
+		return
+
+    """
+    Profiling
+    """
+ 	def profiler_00(self): #
+        print ("Profiler.")
+
+		return
+
+
+    """
+    Processing / Formatting
+    """
+ 	def processor_00(self): #
+        print ("Processor.")
+
+		return
+
+    """
+    Reading / Loading Data
+    """
+ 	def data_loader_00(self): #
+        print ("Data Loader.")
+
+		return
+
+    """
+    Writing / Off-Loading Data
+    """
+ 	def data_off_loader_00(self): #
+        print ("Data Off-Loader.")
+
+		return
+
+	def __del__(self):
+		print ("_gaia object [%s] removed\n" % self.id);
+
+####################################
+## main
+####################################
+if __name__ == "__main__":
+	id = "Library Agent: Internal Agent <<gaia_class>>"
+	print ("=====[" + id + " Start]===== \n")
+	<gaia_class>_object = <gaia_class>(id)
+	<gaia_class>_object.who_am_i()
+
+	#import _Gaia._gaia
+	#help(<gaia_class>) # introspect
+
+	print ("=====[" + id + " End]===== \n");
+
+"""
+# version: <time_stamp>
+"""		

@@ -1,0 +1,14 @@
+notes:
+openssl genrsa -out cert.key
+openssl req -x509 -new -nodes  -key cert.key -days 365  -out cert.crt
+
+openssl genrsa -out key.pem 2048
+[START]
+openssl genrsa -out ca-key.pem 2048
+openssl genrsa -out private.key 2048
+[STOP]
+openssl rsa -in private.key -pubout -out public.key
+
+openssl x509 -subject -issuer -noout -in cert.pem
+
+

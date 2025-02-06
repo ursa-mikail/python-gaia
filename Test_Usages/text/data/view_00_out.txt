@@ -1,0 +1,20 @@
+class Hello:
+   	"""
+   	<class> Hello </class>
+   	"""
+   	def __init__(self, name):
+          	"""
+          	<meta-function>
+          	<function> run </function> 
+          	<parameter> data: int </parameter>
+          	<return> int: resultant </return>
+          	</meta-function>
+          	"""
+          	# This is a comment located in a class method
+          	self.name = name
+ 
+   	def hi(self):
+          	"""
+          	This is a doc string located within the hi method the Hello class.
+          	"""
+          	print("hi {}".format(self.name))
